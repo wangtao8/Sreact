@@ -1,22 +1,17 @@
-require('normalize.css/normalize.css');
-require('styles/App.css');
+import { Carousel, WingBlank } from 'antd-mobile';
+import React, { Component } from 'react'
+import Swiper from './Swiper'
+import Grids from './Grids'
+import Tabe from './Tabe'
 
-import React from 'react';
-
-let yeomanImage = require('../images/yeoman.png');
-
-class AppComponent extends React.Component {
+export default class Main extends Component {
   render() {
     return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
+      <div>
+        <Tabe/>
       </div>
-    );
+    )
   }
 }
 
-AppComponent.defaultProps = {
-};
 
-export default AppComponent;

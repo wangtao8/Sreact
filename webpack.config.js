@@ -2,6 +2,7 @@
 
 const path = require('path');
 const args = require('minimist')(process.argv.slice(2));
+const babelpolyfill = require("babel-polyfill");
 
 // List of allowed environments
 const allowedEnvs = ['dev', 'dist', 'test'];
