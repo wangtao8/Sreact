@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { TabBar } from 'antd-mobile';
+import Swiper from './Swiper'
+import Grids from './Grids'
 
 export default class Tabe extends Component {
     constructor(props) {
@@ -71,7 +73,9 @@ export default class Tabe extends Component {
                 }}
                 data-seed="logId"
               >
-                {this.renderContent('Life')}
+                {/* {this.renderContent('Life')} */}
+                <Swiper/>
+                <Grids/>
               </TabBar.Item>
               <TabBar.Item
                 icon={
