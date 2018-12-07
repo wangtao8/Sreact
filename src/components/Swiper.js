@@ -9,13 +9,13 @@ let styles = {
 export default class Swiper extends Component {
   state = {
     data: ['1', '2', '3'],
-    imgHeight: 176,
+    imgHeight: 176
   }
   componentDidMount() {
     // simulate img loading
     setTimeout(() => {
       this.setState({
-        data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
+        data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI']
       });
     }, 100);
   }
@@ -41,7 +41,7 @@ export default class Swiper extends Component {
                 position: 'relative',
                 top: this.state.slideIndex === index ? -10 : 0,
                 height: this.state.imgHeight,
-                boxShadow: '2px 1px 1px rgba(0, 0, 0, 0.2)',
+                boxShadow: '2px 1px 1px rgba(0, 0, 0, 0.2)'
               }}
             >
               <img
@@ -54,6 +54,7 @@ export default class Swiper extends Component {
                   this.setState({ imgHeight: 'auto' });
                 }}
               />
+              {/* <span>{val}</span> */}
             </a>
           ))}
         </Carousel>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { TabBar } from 'antd-mobile';
 import Swiper from './Swiper'
 import Grids from './Grids'
+import Parent from './Context/Parent'
 
 export default class Tabe extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ export default class Tabe extends Component {
         this.state = {
           selectedTab: 'redTab',
           hidden: false,
-          fullScreen: false,
+          fullScreen: false
         };
       }
     
@@ -21,7 +22,7 @@ export default class Tabe extends Component {
               onClick={(e) => {
                 e.preventDefault();
                 this.setState({
-                  hidden: !this.state.hidden,
+                  hidden: !this.state.hidden
                 });
               }}
             >
@@ -31,7 +32,7 @@ export default class Tabe extends Component {
               onClick={(e) => {
                 e.preventDefault();
                 this.setState({
-                  fullScreen: !this.state.fullScreen,
+                  fullScreen: !this.state.fullScreen
                 });
               }}
             >
@@ -68,7 +69,7 @@ export default class Tabe extends Component {
                 badge={1}
                 onPress={() => {
                   this.setState({
-                    selectedTab: 'blueTab',
+                    selectedTab: 'blueTab'
                   });
                 }}
                 data-seed="logId"
@@ -98,12 +99,13 @@ export default class Tabe extends Component {
                 selected={this.state.selectedTab === 'redTab'}
                 onPress={() => {
                   this.setState({
-                    selectedTab: 'redTab',
+                    selectedTab: 'redTab'
                   });
                 }}
                 data-seed="logId1"
               >
-                {this.renderContent('Koubei')}
+                {/* {this.renderContent('Koubei')} */}
+                <Parent/>
               </TabBar.Item>
               <TabBar.Item
                 icon={
@@ -126,7 +128,7 @@ export default class Tabe extends Component {
                 selected={this.state.selectedTab === 'greenTab'}
                 onPress={() => {
                   this.setState({
-                    selectedTab: 'greenTab',
+                    selectedTab: 'greenTab'
                   });
                 }}
               >
@@ -140,7 +142,7 @@ export default class Tabe extends Component {
                 selected={this.state.selectedTab === 'yellowTab'}
                 onPress={() => {
                   this.setState({
-                    selectedTab: 'yellowTab',
+                    selectedTab: 'yellowTab'
                   });
                 }}
               >
