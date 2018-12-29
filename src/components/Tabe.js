@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import { TabBar } from 'antd-mobile';
-import Swiper from './Swiper'
-import Grids from './Grids'
+// import Swiper from './Swiper'
+// import Grids from './Grids'
 import Parent from './Context/Parent'
+import ControlInput from './ControlInput/ControlInput'
+import Index from './Aicheshi/Home/Index'
 
 export default class Tabe extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          selectedTab: 'redTab',
+          selectedTab: 'blueTab',
           hidden: false,
           fullScreen: false
         };
@@ -66,7 +68,7 @@ export default class Tabe extends Component {
                 />
                 }
                 selected={this.state.selectedTab === 'blueTab'}
-                badge={1}
+                badge={100}
                 onPress={() => {
                   this.setState({
                     selectedTab: 'blueTab'
@@ -75,8 +77,9 @@ export default class Tabe extends Component {
                 data-seed="logId"
               >
                 {/* {this.renderContent('Life')} */}
-                <Swiper/>
-                <Grids/>
+                {/* <Swiper/>
+                <Grids/> */}
+                <Index/>
               </TabBar.Item>
               <TabBar.Item
                 icon={
@@ -146,7 +149,8 @@ export default class Tabe extends Component {
                   });
                 }}
               >
-                {this.renderContent('My')}
+                {/* {this.renderContent('My')} */}
+                <ControlInput/>
               </TabBar.Item>
             </TabBar>
           </div>

@@ -1,0 +1,85 @@
+.topBox {
+    height:66.8%;
+    width:100%;
+    background:url('https://chejiqiche.com/video/notice/bg2.png') round;
+    padding: 20% 0 0;
+}
+.botBox {
+    height:33.2%;
+    width:100%;
+    background:#fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cenBox {
+    height: 80%;
+    width: 16rem;
+    margin: 0 auto;
+}
+.listItem {
+    width: 24%;
+    height: 5.31rem;
+    /* background: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.listItem>*{
+    display: block;
+}
+.listItem>img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.625rem;
+}
+.imgSty {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+.liSty {
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+li:nth-child(1){
+    font-size: 1rem;
+}
+li:nth-child(2){
+    font-weight: bold;
+    margin-top: .5rem;
+    font-size: 0.875rem;
+}
+li:nth-child(4){
+    margin: 1rem 0;
+}
+.imgBox{
+    width: 6.875rem;
+    height: 6.875rem;
+    background: url('https://chejiqiche.com/video/notice/dong.gif') round;
+    position: relative;
+}
+.imgGif{
+    width: 4.625rem;
+    height: 4.625rem;
+    border-radius: 2.3125rem;
+    position: absolute;
+    left: 1.125rem;
+    top: 1.125rem;
+    box-shadow: 0px 0px 20px 3px black;
+}
+.nowPhone{
+    width: 4.75rem;
+    height: 1.5625rem;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: center;
+    line-height: 1.5625rem;
+    border-radius: 1rem;
+}

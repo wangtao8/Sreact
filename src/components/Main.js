@@ -1,4 +1,4 @@
-import { Carousel, WingBlank } from 'antd-mobile';
+// import { Carousel, WingBlank } from 'antd-mobile';
 import React, { Component } from 'react'
 import Tabe from './Tabe'
 import PropTypes from 'prop-types'
